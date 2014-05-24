@@ -1,0 +1,106 @@
+/*
+ * header
+ */
+header {
+  background: url(../images/bg_1x1_01.png) left bottom repeat-x;
+  .container {
+    position: relative;
+    max-width: 1280px; 
+    width: 1200px;
+    img.logo {
+      margin-left: 20px;
+      vertical-align:bottom;
+    }
+    .sub-logo {
+      position: absolute;
+      top: 45px;
+      right: 0;
+      margin-right: 20px;
+    }
+    .header-tools {
+      display: inline-block;
+      height: 33px;
+      line-height: 33px;
+      margin-bottom: 10px;
+      img {
+        vertical-align: text-bottom;
+      }
+      &.weather {
+        border-left: 1px dashed #ccc;
+        padding-left: 1em;
+        font-size: 12px;
+        .low {
+          color: #ed6502;
+        }
+      }
+      &.attention-us {
+        margin-left: 2em;
+        img {
+          margin-right: 0.5em;
+        }
+        a {
+          margin-right: 2em;
+        }
+      }
+      &.suggestion-box {
+        margin-left: 2em;
+        img {
+          margin-left: .5em;
+        }
+      }
+    }
+    .header-tools {
+      *display: inline;
+      *margin-top: 55px;
+    }
+  }
+  .main-nav {
+    background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
+    zoom: 1;
+    ul {
+      float:left;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        float:left;
+        list-style: none;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 1em;
+        background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
+        border-left: 1px solid #fff;
+        cursor: pointer;
+        &:hover,
+        &.active {
+          background-image: url(../images/nav_bg_1x40_02.png);
+        }
+        &:first-child {
+          border-left: 0px solid #fff;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        &.gallery {
+          a {
+            display:block;
+            background: url(../images/icon_42x40_01.png) left center no-repeat;
+            padding-left: 50px;
+          }
+        }
+      }
+    }
+    .site-search {
+      height: 40px;
+      line-height: 40px;
+      input {
+        padding: 2px 0;
+        width: 180px;
+        background: url(../images/icon_17x17_01.png) 99% center no-repeat #e7e7e7;
+      }
+    }
+  }
+}
+
+
