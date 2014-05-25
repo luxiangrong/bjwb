@@ -1,8 +1,6 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   &:before,
   &:after {
     content: " ";
@@ -14,8 +12,6 @@
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
   &:before,
   &:after {
     content: " ";
@@ -27,9 +23,22 @@
 }
 
 .col-main {
-  .make-column(75.8333%);
+  .make-column(910px);
 }
 
 .col-side {
-  .make-column(24.1667%);
+  .make-column(290px);
 }
+
+.col-content-head {
+  .make-column(80px);
+}
+
+.col-content-body {
+  .make-column(790px);
+}
+
+.col-p50 {
+  .make-column(50%);
+}
+

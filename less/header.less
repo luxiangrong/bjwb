@@ -6,14 +6,14 @@ header {
   .container {
     position: relative;
     max-width: 1280px; 
-    width: 1200px;
+    width: 1240px;
     img.logo {
       margin-left: 20px;
       vertical-align:bottom;
     }
     .sub-logo {
       position: absolute;
-      top: 45px;
+      top: 50px;
       right: 0;
       margin-right: 20px;
     }
@@ -92,12 +92,25 @@ header {
       }
     }
     .site-search {
+      position:relative;
       height: 40px;
       line-height: 40px;
+      overflow: hidden;
       input {
-        padding: 2px 0;
+        height: 26px;
+        line-height: 26px;
         width: 180px;
-        background: url(../images/icon_17x17_01.png) 99% center no-repeat #e7e7e7;
+        border: none; 
+        background-color: #e7e7e7;
+      }
+      button {
+        position:absolute;
+        width: 30px;
+        height: 28px;
+        right: 5px;
+        top: 6px;
+        border: none;
+        background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
       }
     }
   }

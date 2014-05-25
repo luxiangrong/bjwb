@@ -1,0 +1,115 @@
+/*
+ * header
+ */
+header {
+  background: url(../images/bg_1x1_01.png) left bottom repeat-x;
+}
+header .container {
+  position: relative;
+  max-width: 1280px;
+  width: 1240px;
+}
+header .container img.logo {
+  margin-left: 20px;
+  vertical-align: bottom;
+}
+header .container .sub-logo {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  margin-right: 20px;
+}
+header .container .header-tools {
+  display: inline-block;
+  height: 33px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+header .container .header-tools img {
+  vertical-align: text-bottom;
+}
+header .container .header-tools.weather {
+  border-left: 1px dashed #ccc;
+  padding-left: 1em;
+  font-size: 12px;
+}
+header .container .header-tools.weather .low {
+  color: #ed6502;
+}
+header .container .header-tools.attention-us {
+  margin-left: 2em;
+}
+header .container .header-tools.attention-us img {
+  margin-right: 0.5em;
+}
+header .container .header-tools.attention-us a {
+  margin-right: 2em;
+}
+header .container .header-tools.suggestion-box {
+  margin-left: 2em;
+}
+header .container .header-tools.suggestion-box img {
+  margin-left: .5em;
+}
+header .container .header-tools {
+  *display: inline;
+  *margin-top: 55px;
+}
+header .main-nav {
+  background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
+  zoom: 1;
+}
+header .main-nav ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header .main-nav ul li {
+  float: left;
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 1em;
+  background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
+  border-left: 1px solid #fff;
+  cursor: pointer;
+}
+header .main-nav ul li:hover,
+header .main-nav ul li.active {
+  background-image: url(../images/nav_bg_1x40_02.png);
+}
+header .main-nav ul li:first-child {
+  border-left: 0px solid #fff;
+}
+header .main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header .main-nav ul li.gallery a {
+  display: block;
+  background: url(../images/icon_42x40_01.png) left center no-repeat;
+  padding-left: 50px;
+}
+header .main-nav .site-search {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+header .main-nav .site-search input {
+  height: 26px;
+  line-height: 26px;
+  width: 180px;
+  border: none;
+  background-color: #e7e7e7;
+}
+header .main-nav .site-search button {
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  right: 5px;
+  top: 6px;
+  border: none;
+  background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
+}

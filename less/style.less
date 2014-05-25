@@ -7,12 +7,46 @@
 @import "print.less";
 
 //栅格
-@import "grid.less";
 @import "utilities.less";
-
-//header部分
-@import "header.less";
+@import "grid.less";
+@import "icon.less";
 
 body {
   font-family: "微软雅黑", Arial, sans-serif;
 }
+
+ul,
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  *color: @gray;
+  &:hover,
+  &:active,
+  &:visited {
+    color: inherit;
+    *color: @gray;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main-page {
+  margin-top: 30px;
+  &.container {
+    width: 1200px;
+  }
+}
+
+
+//header部分
+@import "header.less";
+
+//首页主体部分
+@import "home.less";
