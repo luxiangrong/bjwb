@@ -102,31 +102,38 @@
   }
 }
 
-.news {
-  margin-top: 10px;
-  border-top: 1px solid #ccc;
-  background-color: #e0e0e0;
-  .content-head {
-    text-align: center;
-    img {
-      display: block;
-      margin: 30px auto 10px;
-    }
-    strong {
-      display: inline-block;
-      background-color: #df001d;
-      font-size: 16px;
-      font-weight: normal;
-      color: #fff;
-      padding: 3px 10px;
-      border-radius: 4px;
-    }
+.content-head {
+  text-align: center;
+  img {
+    display: block;
+    margin: 30px auto 10px;
   }
-  .content-body {
+  strong {
+    display: inline-block;
+    background-color: #df001d;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+}
+
+.content-body {
     background-color: #fff;
     padding: 10px 20px;
-    .col-p50 {
-    }
+}
+
+.row-news,
+.row-magazine,
+.row-news-extra {
+  border-top: 1px solid #ccc;
+  background-color: #e0e0e0;
+}
+
+.row-news {
+  margin-top: 10px;
+  .content-body {
     .headlines {
       margin-bottom: 40px;
       h3 {
@@ -154,21 +161,159 @@
     .news-info {
       padding-right: 10px;
     }
-    .news-item {
-      color: #444;
-      font-size: 12px;
-      dt {
-        font-weight: bold;
-        float: left;
-        width: 4em;
-      }
-      dd {
-        margin-left: 4em;
+    dl {
+      margin: 0;
+      &.news-item {
+        color: #444;
+        font-size: 12px;
+        dt {
+          font-weight: bold;
+          float: left;
+          width: 4em;
+        }
+        dd {
+          margin-left: 4em;
+          p {
+            margin: 10px 0;
+          }
+        }
       }
     }
     hr {
       border: none;
       border-top: 1px solid #ebebeb;
+    }
+  }
+}
+
+.row-magazine {
+  .content-body {
+    ul {
+      float: left;
+      li {
+        float: left;
+        width: 150px;
+        text-align: center;
+        margin-right: 20px;
+        img {
+          .make-shadow-box();
+        }
+        p {
+          font-size: 12px;
+        }
+        a {
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: normal;
+          color: #fff;
+          background-color: #eb1e00;
+          &.mag-tag-1 {
+            background-color: #eb1e00;
+          }
+          &.mag-tag-2 {
+            background-color: #2db200;
+          }
+          &.mag-tag-3 {
+            background-color: #4dadfa;
+          }
+          &.mag-tag-4 {
+            background-color: #ff8000;
+          }
+          &.mag-tag-5 {
+            background-color: #eb1e00;
+          }
+        }
+      }
+    }
+  }
+}
+
+.row-news-extra {
+  .content-head {
+    ul {
+      li {
+        a {
+          display: block;
+          height: 75px;
+          line-height: 75px;
+          font-size: 16px;
+          &:hover,
+          &.active {
+            background: #df001d url(../images/icon_10x18_01.png) right center no-repeat;
+            color: #fff;
+          }
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .content-body {
+    font-size: 14px;
+    color: #444;
+    .news-extra-item-wrap {
+      height: 280px;
+      width: 810px;
+      overflow: hidden;
+      .news-extra-item {
+        position: relative;
+        width: 810px;
+        height: 270px;
+        margin-top: 30px;
+        overflow-x: hidden;
+        ul {
+          float: left;
+          position: absolute;
+          left: 0;
+          margin-right: -99999px;
+          margin-left: 25px;
+          li {
+            float: left;
+            position:relative;
+            margin-right: 25px;
+            .title-pic {
+              float: left;
+              width: 450px;
+            }
+            .title-content {
+              float: left;
+              width: 310px;
+              p {
+                margin-top: 0;
+                margin-bottom: 10px;
+                line-height: 1.8em;
+              }
+              a.more {
+                color: #df001d;
+              }
+              .more-pic {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                img {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+        }
+        a.btn-left,
+        a.btn-right {
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 100%;
+          cursor: pointer;
+        }
+        a.btn-left {
+          left: 0;
+          background: url(../images/icon_20x60_01.png) left center no-repeat;
+        }
+        a.btn-right {
+          right: 0;
+          background: url(../images/icon_20x60_02.png) left center no-repeat;
+        }
+      }
     }
   }
 }
