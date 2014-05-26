@@ -24,12 +24,12 @@ jQuery.noConflict();
 			 axis:"x"
 		});
 		
-		//
+		//新闻tab
 		var extraNews = {
 			prev: function($parent){
 				var current = $parent.data('index') == undefined ? 0 : parseInt($parent.data('index'));
 				if(current <= 0) {
-					current = $parent.find('li').length - 1
+					current = $parent.find('li').length - 1;
 				} else {
 					current = current - 1;
 				}
@@ -62,12 +62,49 @@ jQuery.noConflict();
 				});
 				$parent.data('index', current);
 			}
-		}
+		};
 		$(".news-extra-item a.btn-left").click(function(){
 			extraNews.prev($(this).parent().find('ul'));
 		});
 		$(".news-extra-item a.btn-right").click(function(){
 			extraNews.next($(this).parent().find('ul'));
+		});
+		$(".row-news-extra .content-head a").on('mouseover', function(){
+			var $this = $(this);
+			var target = $this.attr('data-target');
+			var index = $("#" + target).index();
+			var itemHeight = $(".row-news-extra .news-extra-item-wrap").find(".news-extra-item").outerHeight(true);
+			$this.closest('ul').find('a').removeClass('active');
+			$this.addClass('active');
+			$(".row-news-extra .news-extra-item-wrap").animate({
+				"margin-top":  itemHeight * index * -1
+			},{
+			    duration: 500,
+			    queue: false,
+			    easing: 'easeInQuint'
+			});
+		});
+		
+		//论坛
+		$(document).ready(function(){
+			var $container = $('#forum-masonry-container');
+		    $container.masonry({
+		      itemSelector: '.item',
+		      columnWidth: 10
+		    });
+		    
+		    var $container = $('#photograph-masonry-container');
+		    $container.masonry({
+		      itemSelector: '.item',
+		      columnWidth: 10,
+		      gutterWidth : 10
+		    });
+		    
+		    var $container = $('#art-masonry-container');
+		    $container.masonry({
+		      itemSelector: '.item',
+		      columnWidth: 10
+		    });
 		});
 	});
 })(jQuery);

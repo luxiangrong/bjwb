@@ -1,3 +1,6 @@
+/*
+ * 热点新闻
+ */
 .hot-news {
   .col-photo {
     .make-column(620px);
@@ -92,6 +95,9 @@
   }
 }
 
+/*
+ * 广告2
+ */
 .banner-02 {
   .make-shadow-box();
   margin-top: 10px;
@@ -126,11 +132,17 @@
 
 .row-news,
 .row-magazine,
-.row-news-extra {
+.row-news-extra,
+.row-forum,
+.row-photograph,
+.row-art  {
   border-top: 1px solid #ccc;
   background-color: #e0e0e0;
 }
 
+/*
+ * 普通新闻
+ */
 .row-news {
   margin-top: 10px;
   .content-body {
@@ -186,6 +198,9 @@
   }
 }
 
+/*
+ * 杂志
+ */
 .row-magazine {
   .content-body {
     ul {
@@ -229,6 +244,9 @@
   }
 }
 
+/*
+ * 其他新闻
+ */
 .row-news-extra {
   .content-head {
     ul {
@@ -251,68 +269,240 @@
   .content-body {
     font-size: 14px;
     color: #444;
-    .news-extra-item-wrap {
+    overflow: hidden;
+    .news-extra-item-view {
       height: 280px;
       width: 810px;
       overflow: hidden;
-      .news-extra-item {
-        position: relative;
-        width: 810px;
-        height: 270px;
-        margin-top: 30px;
-        overflow-x: hidden;
-        ul {
-          float: left;
-          position: absolute;
-          left: 0;
-          margin-right: -99999px;
-          margin-left: 25px;
-          li {
+      .news-extra-item-wrap {
+        margin-top: 0px;
+        .news-extra-item {
+          position: relative;
+          width: 810px;
+          height: 270px;
+          margin-top: 30px;
+          overflow-x: hidden;
+          ul {
             float: left;
-            position:relative;
-            margin-right: 25px;
-            .title-pic {
+            position: absolute;
+            left: 0;
+            margin-right: -99999px;
+            margin-left: 25px;
+            li {
               float: left;
-              width: 450px;
-            }
-            .title-content {
-              float: left;
-              width: 310px;
-              p {
-                margin-top: 0;
-                margin-bottom: 10px;
-                line-height: 1.8em;
+              position:relative;
+              margin-right: 25px;
+              .title-pic {
+                float: left;
+                width: 450px;
               }
-              a.more {
-                color: #df001d;
-              }
-              .more-pic {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                img {
-                  margin-right: 10px;
+              .title-content {
+                float: left;
+                width: 310px;
+                p {
+                  margin-top: 0;
+                  margin-bottom: 10px;
+                  line-height: 1.8em;
+                }
+                a.more {
+                  color: #df001d;
+                }
+                .more-pic {
+                  position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  img {
+                    margin-right: 10px;
+                  }
                 }
               }
             }
           }
+          a.btn-left,
+          a.btn-right {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 100%;
+            cursor: pointer;
+          }
+          a.btn-left {
+            left: 0;
+            background: url(../images/icon_20x60_01.png) left center no-repeat;
+          }
+          a.btn-right {
+            right: 0;
+            background: url(../images/icon_20x60_02.png) left center no-repeat;
+          }
         }
-        a.btn-left,
-        a.btn-right {
-          position: absolute;
+      }
+    }
+  }
+}
+
+.make-mask() {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC44Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-8 */
+}
+
+/*
+ * 论坛
+ */
+.row-forum {
+  .content-body {
+    #forum-masonry-container {
+      position: relative;
+      a {
+        display: block;
+        text-decoration: none;
+        &.more {
+          width: 240px;
+          height: 120px;
+          background-color: #df001d;
+          color: #fff;
+          h5 {
+            margin: 15px;
+            font-size: 20px;
+            font-weight: normal;
+          }
+          span {
+            display: block;
+            text-align: right;
+            margin: 40px 15px 0 0;
+            font-size: 10px;
+            height: 16px;
+            line-height: 16px;
+            padding-right: 20px;
+            background: url(../images/icon_16x16_02.png) right center no-repeat;
+          }
+        }
+        &:hover {
+            img {
+              -webkit-filter: saturate(100%);
+                          filter:saturate(100%);
+              filter:none;
+            }
+          }
+        img {
           display: block;
-          width: 20px;
-          height: 100%;
-          cursor: pointer;
+          -webkit-filter: saturate(50%);
+                       filter:saturate(50%);
+          filter:Gray;
         }
-        a.btn-left {
-          left: 0;
-          background: url(../images/icon_20x60_01.png) left center no-repeat;
+        .mask {
+          .make-mask();
+          span {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            z-index: 1;
+            font-size: 14px;
+            color: #fff;
+            padding: 5px 20px 10px;
+            font-style: normal;
+          }
         }
-        a.btn-right {
-          right: 0;
-          background: url(../images/icon_20x60_02.png) left center no-repeat;
+      }
+    }
+  }
+}
+
+/*
+ * 摄影
+ */
+.row-photograph {
+  #photograph-masonry-container {
+    position: relative;
+    a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      width: 150px;
+      height: 100px;
+      &.more {
+        background-color: #df001d;
+        color: #fff;
+        h5 {
+          margin: 15px;
+          font-size: 20px;
+          font-weight: normal;
         }
+        span {
+          display: block;
+          text-align: right;
+          margin: 30px 15px 0 0;
+          font-size: 10px;
+          height: 16px;
+          line-height: 16px;
+          padding-right: 20px;
+          background: url(../images/icon_16x16_02.png) right center no-repeat;
+        }
+      }
+      &:hover {
+          img {
+            -webkit-filter: saturate(100%);
+                        filter:saturate(100%);
+            filter:none;
+          }
+        }
+      img {
+        display: block;
+        -webkit-filter: saturate(20%);
+                     filter:saturate(20%);
+        filter:Gray;
+      }
+      .mask {
+        .make-mask();
+        span {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          z-index: 1;
+          font-size: 14px;
+          color: #fff;
+          padding: 5px 20px 10px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+
+/*
+ * 美术
+ */
+.row-art {
+  #art-masonry-container {
+    position: relative;
+    a {
+      display: block;
+      text-decoration: none;
+      strong {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #df001d;
+        font-weight: normal;
       }
     }
   }
