@@ -106,5 +106,81 @@ jQuery.noConflict();
 		      columnWidth: 10
 		    });
 		});
+		
+		
+		//侧边栏 选项卡
+		var mySwiper1 = new Swiper('#swiper-container-1',{
+		    mode:'horizontal',
+		    loop: true,
+		    pagination: '#swiper-container-1 .pagination',
+			paginationClickable: true,
+			calculateHeight: true,
+			loop:true,
+			autoplay: 5000
+		});  
+		var mySwiper2 = new Swiper('#swiper-container-2',{
+		    mode:'horizontal',
+		    loop: true,
+		    pagination: '#swiper-container-2 .pagination',
+			paginationClickable: true,
+			calculateHeight: true,
+			loop:true,
+			autoplay: 5000
+		});  
+		$(".tabs a").on("mouseover", function () {
+			var index = $(this).closest('li').index();
+			var divs = $(this).closest('.tabs').find(".tab-item");
+			$(this).closest('ul').find('a').removeClass('active');
+			$(this).addClass('active');
+			divs.hide();
+			divs.eq(index).show(); 
+		});
+		$(".tabs a").eq(0).trigger('mouseover');
+		
+		//媒体链接
+		var medialink = {
+			prev: function($parent){
+				var current = $parent.data('index') == undefined ? 0 : parseInt($parent.data('index'));
+				if(current <= 0) {
+					current = $parent.find('li').length - 1;
+				} else {
+					current = current - 1;
+				}
+				var itemWidth = $parent.find('li').outerWidth(true);
+				$parent.animate({
+					"margin-left": itemWidth * current * -1
+				},{
+				    duration: 500,
+				    queue: false,
+				    easing: 'easeInQuint'
+				});
+				$parent.data('index', current);
+			},
+			next: function($parent){
+				var current = $parent.data('index') == undefined ? 0 : parseInt($parent.data('index'));
+				
+				if(current >= $parent.find('li').length - 1) {
+					current = 0;
+				} else {
+					current = current + 1;
+				}
+				
+				var itemWidth = $parent.find('li').outerWidth(true);
+				$parent.animate({
+					"margin-left": itemWidth * current * -1
+				},{
+				    duration: 500,
+				    queue: false,
+				    easing: 'easeInQuint'
+				});
+				$parent.data('index', current);
+			}
+		};
+		$(".media-link a.btn-left").click(function(){
+			medialink.prev($(this).parent().find('ul'));
+		});
+		$(".media-link a.btn-right").click(function(){
+			medialink.next($(this).parent().find('ul'));
+		});
 	});
 })(jQuery);

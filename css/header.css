@@ -113,3 +113,13 @@ header .main-nav .site-search button {
   border: none;
   background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
 }
+footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #c5c5c5;
+}
+footer .container {
+  text-align: center;
+  width: 1200px;
+}
