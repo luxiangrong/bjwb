@@ -895,7 +895,8 @@ header .main-nav .site-search button {
 .row-news-extra,
 .row-forum,
 .row-photograph,
-.row-art {
+.row-art,
+.row-life {
   border-top: 1px solid #ccc;
   background-color: #e0e0e0;
 }
@@ -1263,4 +1264,102 @@ header .main-nav .site-search button {
   color: #fff;
   background-color: #df001d;
   font-weight: normal;
+}
+/*
+ * 生活
+ */
+.row-life .headlines {
+  margin-bottom: 40px;
+}
+.row-life .headlines h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #444;
+}
+.row-life .headlines p {
+  font-size: 12px;
+  color: #999;
+}
+.row-life .headlines a.more {
+  color: #df001d;
+  font-size: 12px;
+}
+.row-life .headlines .title-pic {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+}
+.row-life .headlines .title-pic img {
+  border: 1px solid #d6d6d6;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 5px 1px #b5b5b5;
+  box-shadow: 0 0 5px 1px #b5b5b5;
+}
+.row-life .headlines .news-info {
+  padding-right: 10px;
+}
+.row-life .normal-news {
+  font-size: 12px;
+  color: #444;
+}
+.row-life .normal-news li {
+  height: 30px;
+  line-height: 30px;
+  margin-right: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.row-life dl {
+  margin: 0;
+}
+.row-life dl.news-item {
+  color: #444;
+  font-size: 12px;
+}
+.row-life dl.news-item dt {
+  font-weight: bold;
+  float: left;
+  width: 4em;
+}
+.row-life dl.news-item dd {
+  margin-left: 4em;
+}
+.row-life dl.news-item dd p {
+  margin: 10px 0;
+}
+.side-box {
+  font-size: 12px;
+  background-color: #e7e7e7;
+}
+.side-box .head {
+  background-color: #888888;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+}
+.side-box .body {
+  padding: 10px;
+}
+.side-box.reporter .star {
+  padding: 10px;
+  background: #d0d0d0 url(../images/bg_1x4_01.png) repeat-x left top;
+}
+.side-box.reporter .star h3 {
+  color: #df001d;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+.side-box.reporter .star img {
+  float: left;
+  margin-right: 10px;
+}
+.side-box.reporter .star p {
+  font-size: 12px;
+  color: #666;
+}
+.side-box.reporter li {
+  padding: 10px 0;
 }

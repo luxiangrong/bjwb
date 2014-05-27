@@ -135,10 +135,71 @@
 .row-news-extra,
 .row-forum,
 .row-photograph,
-.row-art  {
+.row-art,
+.row-life  {
   border-top: 1px solid #ccc;
   background-color: #e0e0e0;
 }
+
+.news-withpic() {
+  .headlines {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 14px;
+      font-weight: normal;
+      color: #444;
+    }
+    p {
+      font-size: 12px;
+      color: #999;
+    }
+    a.more {
+      color: #df001d;
+      font-size: 12px;
+    }
+  
+    .title-pic {
+      float: left;
+      margin-right: 10px;
+      width: 200px;
+      img {
+        .make-shadow-box();
+      }
+    }
+    .news-info {
+      padding-right: 10px;
+    }
+  }
+  .normal-news {
+    font-size: 12px;
+    color: #444;
+    li {
+      height: 30px;
+      line-height: 30px;
+      margin-right: 20px;
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+  dl {
+    margin: 0;
+    &.news-item {
+      color: #444;
+      font-size: 12px;
+      dt {
+        font-weight: bold;
+        float: left;
+        width: 4em;
+      }
+      dd {
+        margin-left: 4em;
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
 
 /*
  * 普通新闻
@@ -504,6 +565,53 @@
         background-color: #df001d;
         font-weight: normal;
       }
+    }
+  }
+}
+
+/*
+ * 生活
+ */
+.row-life {
+  .news-withpic();
+}
+
+.side-box {
+  font-size: 12px;
+  background-color: #e7e7e7;
+  .head {
+    background-color: #888888;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 20px;
+  }
+  .body {
+    padding: 10px;
+  }
+  &.reporter {
+    .star {
+      padding: 10px;
+      background: #d0d0d0 url(../images/bg_1x4_01.png) repeat-x left top;
+      h3 {
+        color: @hover-color;
+        font-weight: normal;
+        font-size: 14px;
+        margin: 5px 0 10px;
+      }
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+      p {
+        font-size: 12px;
+        color: #666;
+      }
+    }
+    li {
+      padding: 10px 0;
     }
   }
 }
