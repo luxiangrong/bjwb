@@ -470,6 +470,11 @@ th {
 .clear-both {
   clear: both;
 }
+img.responsive {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -497,13 +502,13 @@ th {
 .col-main {
   position: relative;
   float: left;
-  width: 910px;
+  width: 700px;
   min-height: 1px;
 }
 .col-side {
   position: relative;
   float: left;
-  width: 290px;
+  width: 300px;
   min-height: 1px;
 }
 .col-content-head {
@@ -515,7 +520,7 @@ th {
 .col-content-body {
   position: relative;
   float: left;
-  width: 790px;
+  width: 600px;
   min-height: 1px;
 }
 .col-p50 {
@@ -721,10 +726,10 @@ a:hover {
   text-decoration: underline;
 }
 .main-page {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .main-page.container {
-  width: 1200px;
+  width: 1000px;
 }
 /*
  * header
@@ -735,17 +740,22 @@ header {
 header .container {
   position: relative;
   max-width: 1280px;
-  width: 1240px;
+  width: 1000px;
 }
 header .container img.logo {
   margin-left: 20px;
   vertical-align: bottom;
 }
 header .container .sub-logo {
-  position: absolute;
   top: 50px;
   right: 0;
   margin-right: 20px;
+}
+header .container .header-tools-wrap {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 12px;
 }
 header .container .header-tools {
   display: inline-block;
@@ -783,6 +793,32 @@ header .container .header-tools {
   *display: inline;
   *margin-top: 55px;
 }
+header .container .site-search {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+  overflow: hidden;
+}
+header .container .site-search input {
+  height: 26px;
+  line-height: 26px;
+  width: 180px;
+  padding: 0 5px;
+  border: none;
+  background-color: #e7e7e7;
+}
+header .container .site-search button {
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  right: 0px;
+  top: 6px;
+  border: none;
+  background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
+}
 header .main-nav {
   background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
   zoom: 1;
@@ -798,7 +834,7 @@ header .main-nav ul li {
   list-style: none;
   height: 40px;
   line-height: 40px;
-  padding: 0 1em;
+  padding: 0 15px;
   background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
   border-left: 1px solid #fff;
   cursor: pointer;
@@ -819,27 +855,25 @@ header .main-nav ul li.gallery a {
   background: url(../images/icon_42x40_01.png) left center no-repeat;
   padding-left: 50px;
 }
-header .main-nav .site-search {
-  position: relative;
-  height: 40px;
-  line-height: 40px;
-  overflow: hidden;
+.breadcrumb-wrap {
+  height: 25px;
+  font-family: "宋体";
+  font-size: 12px;
+  color: #999;
+  background: url(../images/bg_1x25_01.jpg) left center repeat-x;
 }
-header .main-nav .site-search input {
-  height: 26px;
-  line-height: 26px;
-  width: 180px;
-  border: none;
-  background-color: #e7e7e7;
+.breadcrumb-wrap .container {
+  width: 1000px;
 }
-header .main-nav .site-search button {
-  position: absolute;
-  width: 30px;
-  height: 28px;
-  right: 5px;
-  top: 6px;
-  border: none;
-  background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
+.breadcrumb-wrap .breadcrumb li {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 5px;
+}
+.breadcrumb-wrap .breadcrumb li img {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 footer {
   margin-top: 20px;
@@ -989,7 +1023,7 @@ footer .container {
 }
 .content-body {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 10px;
 }
 .row-news,
 .row-magazine,
@@ -997,7 +1031,8 @@ footer .container {
 .row-forum,
 .row-photograph,
 .row-art,
-.row-life {
+.row-life,
+.row-news-channel {
   border-top: 1px solid #ccc;
   background-color: #e0e0e0;
 }
@@ -1426,6 +1461,52 @@ footer .container {
 }
 .row-life dl.news-item dd p {
   margin: 10px 0;
+}
+.row-news-channel .content-head h5 {
+  font-size: 14px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.row-news-channel .content-head ul li {
+  font-size: 12px;
+  border-bottom: 1px solid #b3b3b3;
+  height: 32px;
+  line-height: 32px;
+}
+.row-news-channel .content-head ul li:hover,
+.row-news-channel .content-head ul li.active {
+  background-color: #df001d;
+  color: #fff;
+}
+.row-news-channel .content-head ul li a {
+  display: block;
+  text-decoration: none;
+}
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.mask.mask-saturation {
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#80ffffff', GradientType=0);
+  /* IE6-8 */
 }
 .side-box {
   font-size: 12px;

@@ -7,17 +7,22 @@ header {
 header .container {
   position: relative;
   max-width: 1280px;
-  width: 1240px;
+  width: 1000px;
 }
 header .container img.logo {
   margin-left: 20px;
   vertical-align: bottom;
 }
 header .container .sub-logo {
-  position: absolute;
   top: 50px;
   right: 0;
   margin-right: 20px;
+}
+header .container .header-tools-wrap {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 12px;
 }
 header .container .header-tools {
   display: inline-block;
@@ -55,6 +60,32 @@ header .container .header-tools {
   *display: inline;
   *margin-top: 55px;
 }
+header .container .site-search {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+  overflow: hidden;
+}
+header .container .site-search input {
+  height: 26px;
+  line-height: 26px;
+  width: 180px;
+  padding: 0 5px;
+  border: none;
+  background-color: #e7e7e7;
+}
+header .container .site-search button {
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  right: 0px;
+  top: 6px;
+  border: none;
+  background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
+}
 header .main-nav {
   background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
   zoom: 1;
@@ -70,7 +101,7 @@ header .main-nav ul li {
   list-style: none;
   height: 40px;
   line-height: 40px;
-  padding: 0 1em;
+  padding: 0 15px;
   background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
   border-left: 1px solid #fff;
   cursor: pointer;
@@ -91,27 +122,25 @@ header .main-nav ul li.gallery a {
   background: url(../images/icon_42x40_01.png) left center no-repeat;
   padding-left: 50px;
 }
-header .main-nav .site-search {
-  position: relative;
-  height: 40px;
-  line-height: 40px;
-  overflow: hidden;
+.breadcrumb-wrap {
+  height: 25px;
+  font-family: "宋体";
+  font-size: 12px;
+  color: #999;
+  background: url(../images/bg_1x25_01.jpg) left center repeat-x;
 }
-header .main-nav .site-search input {
-  height: 26px;
-  line-height: 26px;
-  width: 180px;
-  border: none;
-  background-color: #e7e7e7;
+.breadcrumb-wrap .container {
+  width: 1000px;
 }
-header .main-nav .site-search button {
-  position: absolute;
-  width: 30px;
-  height: 28px;
-  right: 5px;
-  top: 6px;
-  border: none;
-  background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
+.breadcrumb-wrap .breadcrumb li {
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  margin-right: 5px;
+}
+.breadcrumb-wrap .breadcrumb li img {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 footer {
   margin-top: 20px;

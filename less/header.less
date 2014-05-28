@@ -6,16 +6,21 @@ header {
   .container {
     position: relative;
     max-width: 1280px; 
-    width: 1240px;
+    width: 1000px;
     img.logo {
       margin-left: 20px;
       vertical-align:bottom;
     }
     .sub-logo {
-      position: absolute;
       top: 50px;
       right: 0;
       margin-right: 20px;
+    }
+    .header-tools-wrap {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      font-size: 12px;
     }
     .header-tools {
       display: inline-block;
@@ -53,6 +58,32 @@ header {
       *display: inline;
       *margin-top: 55px;
     }
+    .site-search {
+      position:absolute;
+      top: 50px;
+      right: 0;
+      height: 40px;
+      line-height: 40px;
+      width: 200px;
+      overflow: hidden;
+      input {
+        height: 26px;
+        line-height: 26px;
+        width: 180px;
+        padding: 0 5px;
+        border: none; 
+        background-color: #e7e7e7;
+      }
+      button {
+        position:absolute;
+        width: 30px;
+        height: 28px;
+        right: 0px;
+        top: 6px;
+        border: none;
+        background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
+      }
+    }
   }
   .main-nav {
     background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
@@ -67,7 +98,7 @@ header {
         list-style: none;
         height: 40px;
         line-height: 40px;
-        padding: 0 1em;
+        padding: 0 15px;
         background: url(../images/nav_bg_1x40_01.png) repeat-x left center;
         border-left: 1px solid #fff;
         cursor: pointer;
@@ -91,27 +122,30 @@ header {
         }
       }
     }
-    .site-search {
-      position:relative;
-      height: 40px;
-      line-height: 40px;
-      overflow: hidden;
-      input {
-        height: 26px;
-        line-height: 26px;
-        width: 180px;
-        border: none; 
-        background-color: #e7e7e7;
+    
+  }
+}
+
+.breadcrumb-wrap {
+  height: 25px;
+  font-family:"宋体";
+  font-size: 12px;
+  color: #999;
+  background: url(../images/bg_1x25_01.jpg) left center repeat-x;
+  .container {
+    width: 1000px;
+  }
+  
+  .breadcrumb {
+    li {
+      float: left;
+      height: 25px;
+      line-height: 25px;
+      img  {
+        vertical-align: middle;
+        margin-right: 5px;
       }
-      button {
-        position:absolute;
-        width: 30px;
-        height: 28px;
-        right: 5px;
-        top: 6px;
-        border: none;
-        background: url(../images/icon_17x17_01.png) center center no-repeat #e7e7e7;
-      }
+      margin-right: 5px;
     }
   }
 }
