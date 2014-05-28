@@ -1,0 +1,129 @@
+/*
+ * 新闻详情页
+ */
+.news-detail {
+  .share {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    border-left: 1px solid #d0d0d0;
+    border-top: 1px dotted #a8a8b7;
+    border-bottom: 1px dotted #a8a8b7;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.news-title {
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  border-bottom: 1px dotted #a8a8b7;
+  border-right: none;
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0 ;
+  }
+  p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+}
+
+.news-body {
+  padding: 40px;
+  border-left: 1px solid #d0d0d0;
+  p {
+    font-size: 14px;
+  }
+}
+
+.news-pagination {
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  input {
+    width: 3em;
+  }
+}
+
+.feel-comment {
+  padding: 20px;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  *zoom: 1;
+  oveflow: hidden;
+  h3 {
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #EFEFEF;
+  }
+  ul{
+    &.faces {
+      margin-top: 20px;
+      li {
+        float: left;
+        width: 82px;
+        text-align: center;
+        font-size: 12px; 
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.everyone {
+  padding: 20px 0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #878787;
+    margin: 20px;
+  }
+  .swiper-container, 
+  .swiper-slide {
+    text-align: center;
+    *width: 578px;
+    height: 220px;
+  }
+  img {
+    .make-shadow-box();
+  }
+  p {
+    font-size: 12px;
+    padding: 0px 20px 20px;
+  }
+  .pagination .swiper-pagination-switch {
+    background: #fff;
+    border: 1px solid #ccc;
+  }
+  .pagination .swiper-visible-switch {
+    background: lighten(@hover-color, 40%);
+    border-color: lighten(@hover-color, 40%);
+  }
+  .pagination .swiper-active-switch {
+    background: @hover-color;
+    border-color: @hover-color;
+  }
+}
+
+.attention {
+  padding: 20px 0;
+  border-left: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  img {
+    vertical-align: middle;
+    margin-left: 30px;
+  }
+}

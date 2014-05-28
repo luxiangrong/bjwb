@@ -182,5 +182,22 @@ jQuery.noConflict();
 		$(".media-link a.btn-right").click(function(){
 			medialink.next($(this).parent().find('ul'));
 		});
+		
+		
+		//大家都在看
+		var swiperEveryBody = new Swiper('#swiper-container-everybody',{
+    		pagination: '#swiper-container-everybody .pagination',
+    		paginationClickable: true,
+    		slidesPerView: 3,
+    		calculateHeight: true,
+    		loop: false
+  		});
+  		var swiperEveryOne = new Swiper('#swiper-container-everyone',{
+    		pagination: '#swiper-container-everyone .pagination',
+    		paginationClickable: true,
+    		slidesPerView: 3,
+    		calculateHeight: true,
+    		loop: false
+  		});
 	});
 })(jQuery);

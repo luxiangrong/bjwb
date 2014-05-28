@@ -23,6 +23,10 @@ header .container .header-tools-wrap {
   right: 0;
   top: 10px;
   font-size: 12px;
+  height: 30px;
+}
+header .container .header-tools-wrap .header-tools {
+  *margin: 0;
 }
 header .container .header-tools {
   display: inline-block;
