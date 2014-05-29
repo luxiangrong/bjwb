@@ -127,3 +127,116 @@
     margin-left: 30px;
   }
 }
+
+/*
+ * 图片新闻详情页
+ */
+.photo-news-detail {
+  .row {
+    margin-bottom: 20px;
+  }
+  .content {
+    border: 1px solid #d0d0d0;
+    padding: 20px;
+  }
+  .news-title {
+    border: none;
+  }
+  .share {
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    img {
+      vertical-align: text-bottom;
+    }
+  }
+  .date {
+    text-align: right;
+    color: #333;
+    font-size: 12px;
+  }
+  .feel-comment {
+    border: none;
+    .make-column(60%);
+    padding: 0;
+    h3 {
+      border: none;
+      margin: 20px 0;
+      padding: 0;
+    }
+    .faces {
+      li {
+        position: relative;
+        height: 150px;
+        width: 70px;
+        .face {
+          position: absolute;
+          bottom: 0;
+          height: 74px;
+          left: 50%;
+          margin-left: -15px;
+          text-align: center;
+        }
+        .vote {
+          height: 75px;
+          width: 70px;
+          position: absolute;
+          bottom: 75px;
+          left: 0;
+          .vote-graph {
+            position: absolute;
+            width: 10px;
+            left: 50%;
+            margin-left: -5px;
+            bottom: 0;
+            background: #e40218;
+            .vote-num {
+              left: 0;
+              position: absolute;
+              top: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .weixin {
+    .make-column(40%);
+    h3 {
+      font-size: 14px;
+      color: #333;
+      margin: 20px 0;
+      small {
+        font-size: 12px;
+        color: #999;
+        margin-left: 20px;
+        font-weight: normal;
+      }
+    }
+    ul {
+      li {
+        float: left;
+        width: 30%;
+        text-align: center;
+        img {
+          border: 1px solid #999;
+          padding: 5px;
+        }
+      }
+    }
+  }
+  
+  .relation-photo {
+    zoom: 1;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #d0d0d0;
+    ul {
+      li {
+        float: left;
+        width: 25%;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@ jQuery.noConflict();
 	$(function() {
 		//焦点新闻
 		$(".hot-news .col-list li").on('mouseover', function(){
-			var newsWidth = 620;
+			var newsWidth = 450;
 			var index = $(this).index();
 			
 			$(".hot-news .col-list li").removeClass('active');
@@ -96,8 +96,7 @@ jQuery.noConflict();
 		    var $container = $('#photograph-masonry-container');
 		    $container.masonry({
 		      itemSelector: '.item',
-		      columnWidth: 10,
-		      gutterWidth : 10
+		      gutterWidth : 6
 		    });
 		    
 		    var $container = $('#art-masonry-container');
@@ -199,5 +198,31 @@ jQuery.noConflict();
     		calculateHeight: true,
     		loop: false
   		});
+  		
+  		//
+  		$(document).ready(function(){
+  			if($(".galleria").length) {
+  				Galleria.loadTheme('script/galleria/themes/classic/galleria.classic.min.js');
+            	Galleria.run('.galleria',{
+            		height: 700,
+            		imagePosition: "top"
+            	});
+           	}
+  		});
+  		
+  		$(".pre-page a").off('click').on('click', function(e){
+  			e.preventDefault();
+  			var children = $(".main-page").children();
+  			children.css('transition', 'transform 1s');
+  			children.css('transform', 'translate3d(-1920px, 0, 0)');
+  			
+  			$(".main-page").load("list-ajax.html", function(){
+  				var script = document.createElement("script");
+				script.src = "script/function.js";
+				var body = document.body;
+				body.insertBefore(script, body.firstChild);
+  			});
+  		})
+  		
 	});
 })(jQuery);

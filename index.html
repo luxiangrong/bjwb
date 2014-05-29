@@ -15,6 +15,12 @@
 	    <![endif]-->
 	</head>
 	<body>
+		<div class="pre-page">
+			<a href="index.html"><span>首页</span></a>
+		</div>
+		<div class="next-page">
+			<a href="list.html"><span>新闻</span></a>
+		</div>
 		<header>
 			<div class="container">
 				<div class="row logo-wrap">
@@ -26,20 +32,28 @@
 						<span>/</span>
 						<span>5 ℃</span>
 					</div>
-					<div class="header-tools attention-us">
-						<img src="images/icon_20x20_01.png">
-						<a>关注我们</a>
-						<img src="images/icon_25x20_01.png">
-						<img src="images/icon_25x20_02.png">
-						<img src="images/icon_25x20_03.png">
+					<div class="header-tools-wrap" style="position: absolute; top: 10px; right: 0px;">
+						<div class="header-tools attention-us">
+							<img src="images/icon_20x20_01.png">
+							<a>关注我们</a>
+							<img src="images/icon_25x20_01.png">
+							<img src="images/icon_25x20_02.png">
+							<img src="images/icon_25x20_03.png">
+						</div>
+						<div class="header-tools suggestion-box">
+							<span>建议箱:</span>
+							<img src="images/icon_25x25_01.png">
+						</div>
 					</div>
-					<div class="header-tools suggestion-box">
-						<span>建议箱:</span>
-						<img src="images/icon_25x25_01.png">
-					</div>
-					<div class="sub-logo pull-right">
+					<div class="header-tools">
 						<img class="logo" src="images/logo_02.png" />
 						<img class="logo" src="images/logo_03.png" />
+					</div>
+					<div class="site-search">
+						<form>
+							<input type="search" />
+							<button type="submit">&nbsp;</button> 
+						</form>
 					</div>
 				</div>
 				<div class="row main-nav">
@@ -61,18 +75,24 @@
 							<a href="#">在线图库</a>
 						</li>
 					</ul>
-					<div class="site-search">
-						<form>
-							<input type="search" />
-							<button type="submit">&nbsp;</button> 
-						</form>
-					</div>
 				</div>
 			</div>
 		</header>
+		<div class="breadcrumb-wrap">
+			<div class="container">
+				<ul class="breadcrumb">
+					<li>
+						<img src="images/icon_14x11_01.png" /><a href="#">首页</a> <span class="divider">></span>
+					</li>
+					<li>
+						<a href="#">北晚新闻</a> <span class="divider"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div class="main-page container center-block">
 			<div class="row banner-01">
-				<a href="#"><img src="images/banner_1200x100_01.png"></a>
+				<a href="#"><img src="images/banner_1000x100_01.jpg"></a>
 			</div>
 			<div class="row content">
 				<!-- col-main start -->
@@ -82,35 +102,31 @@
 						<div class="col-photo">
 							<ul>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 								<li>
-									<img src="images/hot_news_620x360_01.png" />
-									<h1>辽宁舰女兵集体亮相</h1>
-								</li>
-								<li>
-									<img src="images/hot_news_620x360_01.png" />
+									<img src="images/hot_news_450x320_01.jpg" />
 									<h1>辽宁舰女兵集体亮相</h1>
 								</li>
 							</ul>
@@ -149,15 +165,11 @@
 									<i class="pull-right">1h</i>
 									<a href="#">安倍将参观安妮日记作者博物馆 </a>
 								</li>
-								<li>
-									<i class="pull-right">1h</i>
-									<a href="#">辽宁舰女兵集体亮相 </a>
-								</li>
 							</ul>
 						</div>
 					</div><!--  hot-news end -->
 					<div class="row banner-02 clear-both">
-						<img src="images/banner_890x90_01.png" />
+						<img src="images/banner_680x90_01.jpg" />
 					</div>
 					<!--  row-news start -->
 					<div class="row row-news clearfix">
@@ -170,11 +182,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_01.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_01.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚 <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动——</p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -210,11 +222,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_02.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_02.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚  <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚  </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -253,11 +265,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_03.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_03.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚 <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚</a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -279,11 +291,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_04.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_04.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚  <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚</a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -308,11 +320,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_05.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_05.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚 <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -327,11 +339,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_06.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_06.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚  <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚</a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -434,51 +446,54 @@
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
-											<div class="title-content">
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
+											<div class="title-content clear-both">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 									</ul>
@@ -491,51 +506,54 @@
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 									</ul>
@@ -548,51 +566,54 @@
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 									</ul>
@@ -605,51 +626,54 @@
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 										<li>
 											<div class="title-pic">
 												<img src="images/extra_432x240_01.jpg" />
 											</div>
+											<div class="more-pic">
+												<img src="images/extra_90x50_01.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+												<img src="images/extra_90x50_03.jpg" />
+												<img src="images/extra_90x50_02.jpg" />
+											</div>
 											<div class="title-content">
 												<p>林徽因：第一个踏上天坛祈年殿顶上的女人</p>
 												<p>
 													1935年5月11日的《京报》上刊载着这样一条消息：“文整会修天坛昨在圜丘台上行开工礼”。天坛虽为明清两代皇帝祭天之所，但经历了八国联军的蹂躏，早已破败不堪。
 												</p>
 												<a class="more" href="#">查看详情》</a>
-												<div class="more-pic">
-													<img src="images/extra_90x50_01.jpg" />
-													<img src="images/extra_90x50_02.jpg" />
-													<img src="images/extra_90x50_03.jpg" />
-												</div>
 											</div>
 										</li>
 									</ul>
@@ -667,18 +691,18 @@
 							<strong>论坛</strong>
 						</div>
 						<div class="col-content-body content-body">
-							<div id="forum-masonry-container">
+							<div id="forum-masonry-container" class="pic-news">
 								<a class="item more" href="#">
 									<h5>精华</h5>
 									<span>MORE</span>
 								</a>
-								<a class="item" href="#" style="width: 240px; height: 120px;"><img src="images/forum_240x120_03.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#" style="width: 310px; height: 180px;"><img src="images/forum_310x180_01.jpg"><i class="mask"><span>瑞典斯德哥尔摩一名女子在闻樱花</span></i></a>
-								<a class="item" href="#" style="width: 240px; height: 120px;"><img src="images/forum_240x120_03.jpg"><i class="mask"><span>上海首批千余巡警配枪巡逻</span></i></a>
-								<a class="item" href="#" style="width: 240px; height: 120px;"><img src="images/forum_240x120_03.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#" style="width: 310px; height: 180px;"><img src="images/forum_310x180_02.jpg"><i class="mask"><span>华山观云人</span></i></a>
-								<a class="item" href="#" style="width: 240px; height: 120px;"><img src="images/forum_240x120_03.jpg"><i class="mask"><span>专访马航家属委员会：守护微光</span></i></a>
-								<a class="item" href="#" style="width: 240px; height: 120px;"><img src="images/forum_240x120_03.jpg"><i class="mask"><span>相亲那些事</span></i></a>
+								<a class="item" href="#" style="width: 180px; height: 120px;"><img width="180" height="120" src="images/forum_240x120_03.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#" style="width: 220px; height: 180px;"><img width="220" height="180" src="images/forum_310x180_01.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">瑞典斯德哥尔摩一名女子在闻樱花</span></a>
+								<a class="item" href="#" style="width: 180px; height: 120px;"><img width="180" height="120" src="images/forum_240x120_03.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">上海首批千余巡警配枪巡逻</span></a>
+								<a class="item" href="#" style="width: 180px; height: 120px;"><img width="180" height="120" src="images/forum_240x120_03.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#" style="width: 220px; height: 180px;"><img width="220" height="180" src="images/forum_310x180_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">华山观云人</span></a>
+								<a class="item" href="#" style="width: 180px; height: 120px;"><img width="180" height="120" src="images/forum_240x120_03.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">专访马航家属委员会：守护微光</span></a>
+								<a class="item" href="#" style="width: 180px; height: 120px;"><img width="180" height="120" src="images/forum_240x120_03.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">相亲那些事</span></a>
 							</div>
 						</div>
 					</div><!--  row-forum end -->
@@ -689,31 +713,28 @@
 							<strong>摄影</strong>
 						</div>
 						<div class="col-content-body content-body">
-							<div id="photograph-masonry-container">
+							<div id="photograph-masonry-container" class="pic-news">
 								<a class="item more" href="#">
 									<h5>摄影学院</h5>
 									<span>MORE</span>
 								</a>
-								<a class="item" href="#"><img src="images/photograph_150x100_01.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_01.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
 								<a class="item more" href="#">
 									<h5>魅态摄影</h5>
 									<span>MORE</span>
 								</a>
-								<a class="item" href="#"><img src="images/photograph_150x100_01.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_01.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
 								<a class="item more" href="#">
 									<h5>魅态摄影</h5>
 									<span>MORE</span>
 								</a>
-								<a class="item" href="#"><img src="images/photograph_150x100_01.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
-								<a class="item" href="#"><img src="images/photograph_150x100_02.jpg"><i class="mask"><span>班章茶之变</span></i></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_02.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
+								<a class="item" href="#"><img width="140" height="100" src="images/photograph_150x100_01.jpg"><div class="mask mask-saturation"></div><span class="pic-mask-title">班章茶之变</span></a>
 							</div>
 						</div>
 					</div><!--  row-photograph end -->
@@ -724,12 +745,12 @@
 							<strong>美术</strong>
 						</div>
 						<div class="col-content-body content-body">
-							<div id="art-masonry-container">
-								<a class="item" href="#" style="width: 250px;height: 210px;"><img src="images/art_250x210_01.jpg"><strong>丹青妙笔</strong></a>
-								<a class="item" href="#" style="width: 250px;height: 330px;"><img src="images/art_02_250x330.jpg"><strong>丹青妙笔</strong></a>
-								<a class="item" href="#" style="width: 290px;height: 160px;"><img src="images/art_3_290x160.jpg"><strong>丹青妙笔</strong></a>
-								<a class="item" href="#" style="width: 290px;height: 170px;"><img src="images/art_05_290x170.jpg"><strong>丹青妙笔</strong></a>
-								<a class="item" href="#" style="width: 250px;height: 120px;"><img src="images/art_04_250x120.jpg"><strong>丹青妙笔</strong></a>
+							<div id="art-masonry-container" class="pic-news">
+								<a class="item" href="#" style="width: 220px;height: 210px;"><img width="220" height="210" src="images/art_250x210_01.jpg"><div class="mask mask-saturation"></div><strong>丹青妙笔</strong></a>
+								<a class="item" href="#" style="width: 240px;height: 330px;"><img width="240" height="330" src="images/art_02_250x330.jpg"><div class="mask mask-saturation"></div><strong>丹青妙笔</strong></a>
+								<a class="item" href="#" style="width: 120px;height: 160px;"><img width="120" height="160" src="images/art_3_290x160.jpg"><div class="mask mask-saturation"></div><strong>丹青妙笔</strong></a>
+								<a class="item" href="#" style="width: 220px;height: 120px;"><img width="220" height="120" src="images/art_04_250x120.jpg"><div class="mask mask-saturation"></div><strong>丹青妙笔</strong></a>
+								<a class="item" href="#" style="width: 120px;height: 170px;"><img width="120" height="170" src="images/art_05_290x170.jpg"><div class="mask mask-saturation"></div><strong>丹青妙笔</strong></a>
 							</div>
 						</div>
 					</div><!--  row-art end -->
@@ -744,11 +765,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_01.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_01.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚 <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动——</p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -761,11 +782,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_02.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_02.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚  <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动——</p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -789,11 +810,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_01.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_01.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚 <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -806,11 +827,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_02.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_02.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚  <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚  </a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -825,11 +846,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_01.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_01.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚 <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 乘客乱叫单两次永久禁用</a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动——</p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -842,11 +863,11 @@
 								<div class="col-p50">
 									<div class="headlines">
 										<div class="title-pic">
-											<img src="images/title_pic_190x130_02.jpg" />
+											<img width="140" height="96" src="images/title_pic_190x130_02.jpg" />
 										</div>
 										<div class="news-info">
-											<h3><a href="#">嘀嘀打车强化违约处罚  <br/>乘客乱叫单两次永久禁用</a></h3>
-											<p>近日，由北晚新视觉网举办的人气最高的线上活动——“新视觉·i摄影周赛”迎来第100期。 </p>
+											<h3><a href="#">嘀嘀打车强化违约处罚 叫单两次永久禁用</a></h3>
+											<p>近日，由北晚新视觉网举办的人气最高的线上活动—— </p>
 											<a href="#" class="more">详情 》</a>
 										</div>
 									</div>
@@ -1426,6 +1447,7 @@
 		<script type="text/javascript" src="script/jquery.masonry.min.js"></script>
 		<script type="text/javascript" src="script/mCustomScrollbar/jquery.mCustomScrollbar.js"></script>
 		<script type="text/javascript" src="script/idangerous.swiper.min.js"></script>
+		<script type="text/javascript" src="script/galleria/galleria-1.3.5.min.js"></script>
 		<script type="text/javascript" src="script/function.js"></script>
 	</body>
 </html>
