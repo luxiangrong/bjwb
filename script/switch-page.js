@@ -4,18 +4,18 @@
 		var linkStack = {
 			'index.html' : {
 				name : '首页',
-				prev : 'index-part.html',
-				next : 'list.html'
-			},
-			'list.html' : {
-				name : '子类页',
-				prev : 'index.html',
+				prev : 'list.html',
 				next : 'index-part.html'
 			},
-			'index-part.html' : {
-				name : '栏目首页',
-				prev : 'list.html',
+			'list.html' : {
+				name : '北京',
+				prev : 'index-part.html',
 				next : 'index.html'
+			},
+			'index-part.html' : {
+				name : '新闻',
+				prev : 'index.html',
+				next : 'list.html'
 			}
 		};
 

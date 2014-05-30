@@ -207,5 +207,15 @@
 				});
 			}
 		});
+		
+		//推荐新闻
+		$(".recommend-news .close ").off('click').on('click', function(e){
+			e.stopPropagation();
+			$(this).closest('.recommend-news').height($(this).closest('.recommend-news').height());
+			$(this).closest('.recommend-news').find('.body').hide();
+		});
+		$(".recommend-news .title").off('click').on('click', function(e){
+			$(this).closest('.recommend-news').find('.body').show();
+		})
 	});
 })(jQuery);
