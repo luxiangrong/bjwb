@@ -35,15 +35,15 @@
 				//初始化需要处理的链接
 				$('.pre-page a').address(function() {
 					$(".content").css('transform', 'translate3d(2000px, 0, 0)');
-					$(".content").css('-webkit-transform', 'translate3d(2000px, 0, 0)');
 					$(".content").css('-moz-transform', 'translate3d(2000px, 0, 0)');
+					$(".content").css('-webkit-transform', 'translate3d(2000px, 0, 0)');
 					return $(this).attr('href');
 
 				});
 				$('.next-page a').address(function() {
 					$(".content").css('transform', 'translate3d(-2000px, 0, 0)');
-					$(".content").css('-webkit-transform', 'translate3d(-2000px, 0, 0)');
 					$(".content").css('-moz-transform', 'translate3d(-2000px, 0, 0)');
+					$(".content").css('-webkit-transform', 'translate3d(-2000px, 0, 0)');
 					return $(this).attr('href');
 				});
 
