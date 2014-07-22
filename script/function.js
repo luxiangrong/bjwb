@@ -208,51 +208,15 @@
 				});
 			}
 		});
-
-		if (window.history.pushState) {
-
-			var init = true, state = window.history.pushState !== undefined;
-
-			// Handles response
-			var handler = function(data) {
-				$('.content').html($('.content', data).html());
-				$.address.title(/>([^<]*)<\/title/.exec(data)[1]);
-			};
-
-			$.address.state('/bjwb').init(function() {
-				$('.next-page a,.pre-page a').address();
-
-			}).change(function(event) {
-				// Selects the proper navigation link
-				$('.pre-page a, .next-page a').each(function() {
-					if ($(this).attr('href') == ($.address.state() + event.path)) {
-						$(this).addClass('selected').focus();
-					} else {
-						$(this).removeClass('selected');
-					}
-				});
-
-				if (state && init) {
-					init = false;
-				} else {
-					// Loads the page content and inserts it into the content area
-					$.ajax({
-						url : $.address.state() + event.path,
-						dataType : 'html',
-						error : function(XMLHttpRequest, textStatus, errorThrown) {
-							handler(XMLHttpRequest.responseText);
-						},
-						success : function(data, textStatus, XMLHttpRequest) {
-							handler(data);
-							$.getScript('script/function.js');
-						}
-					});
-				}
-
-			});
-			if (!state) {
-				// Hides the page during initialization
-			}
-		}
+		
+		//推荐新闻
+		$(".recommend-news .close ").off('click').on('click', function(e){
+			e.stopPropagation();
+			$(this).closest('.recommend-news').height($(this).closest('.recommend-news').height());
+			$(this).closest('.recommend-news').find('.body').hide();
+		});
+		$(".recommend-news .title").off('click').on('click', function(e){
+			$(this).closest('.recommend-news').find('.body').show();
+		})
 	});
 })(jQuery);
