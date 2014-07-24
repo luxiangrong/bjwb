@@ -203,8 +203,11 @@
 				Galleria.loadTheme('script/galleria/themes/classic/galleria.classic.min.js');
 				Galleria.run('.galleria', {
 					height : 700,
-					imagePosition : "top",
-					imageCrop: 'height'
+					imagePosition : "center",
+					imageCrop: 'height',
+					imagePan: true,
+					maxScaleRatio: 1,
+					clicknext: true
 				});
 			}
 		});
