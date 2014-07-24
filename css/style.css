@@ -2395,3 +2395,21 @@ footer .container {
   width: 25%;
   text-align: center;
 }
+.photo-news-detail .galleria-container {
+  margin-bottom: 120px;
+  overflow: visible;
+}
+.photo-news-detail .galleria-container .galleria-thumbnails-container {
+  bottom: -120px;
+}
+.photo-news-detail .galleria-container .galleria-info {
+  top: auto;
+  bottom: -20px;
+}
+.photo-news-detail .galleria-container .galleria-counter {
+  bottom: 10px;
+  color: #333;
+}
+.photo-news-detail .galleria-container .galleria-counter span {
+  color: #333;
+}
